@@ -1,0 +1,25 @@
+{# archivo de dependencias -#}
+{# testing spaces -#}
+name: {{ cookiecutter.project_slug }}
+
+channels:
+ - conda-forge
+
+dependencies:
+  {% if cookiecutter.project_packages == "All" -%}
+
+  - fs
+  - jupyter
+  - jupyterlab
+  - pathlib
+  {% endif -%}
+
+  - pip
+  {% if cookiecutter.project_packages == "All" -%}
+  - pyprojroot
+  {% endif -%}
+  - python={{ cookiecutter.python_version }}
+  - pip:
+  {% if cookiecutter.project_packages == "All" -%}
+  - pyhere
+  {% endif -%}

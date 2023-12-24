@@ -1,0 +1,6 @@
+name: cookiecutter-personal
+channels:
+  - conda-forge
+dependencies:
+  - cookiecutter
+prefix: /home/bry4nvq/conda/envs/cookiecutter-personal
