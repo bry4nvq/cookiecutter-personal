@@ -21,5 +21,9 @@ dependencies:
   - python={{ cookiecutter.python_version }}
   - pip:
   {% if cookiecutter.project_packages == "All" -%}
+<<<<<<< HEAD
     - pyhere
+=======
+   - pyhere
+>>>>>>> 3bbe801ce1bd1dc9801c084fd94f39c23509a6fb
   {% endif -%}
